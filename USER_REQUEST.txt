@@ -1,0 +1,1 @@
+HOH 는 HOH-interface 랑 별개로 HOH 올려줘야해 ㅇㅇ interface 는 좀 기술적 내용임 내가봤을때 ㅇㅇ. bhgman_essense 말고 그 레포 따로 만들엇던거같은데 symposium 인가 거기서 ㅇㅇ; 그 그냥 여기 작업환경으로 있는 레포는 있는지 확인해줘볼래 푸시를 안한거같은데 ㅇㅇ? 그 bhgman 은 그냥 bhgman 으로 하고 스페이스걸도 spacegirl 로 해줘 헷갈린데 essence tool 이런단어 붙어있으니까 ㅇㅇ

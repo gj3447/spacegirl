@@ -1,0 +1,73 @@
+{
+  "schema": "apostle-module/1",
+  "identity": {
+    "stable_entity_uid": "sym:Character:space_girl",
+    "slot_uid": "metahumotonic:apostle-slot:05",
+    "position": 5,
+    "korean_name": "스페이스걸",
+    "english_name": "Space Girl"
+  },
+  "naming": {
+    "authority": "SOURCE_DOCUMENT",
+    "state": "ATTESTED"
+  },
+  "repository_naming": {
+    "repository_name": "spacegirl",
+    "state": "USER_REQUESTED",
+    "authority": "USER_PRIMARY",
+    "source": {
+      "path": "USER_REQUEST.txt",
+      "sha256": "933e3788200c53ebd3d59e84dd799b96171b9952865371a7977752c44215e2e3"
+    },
+    "note": "Repository name is a user-requested label. Original English persona name remains in identity."
+  },
+  "source_pins": [
+    {
+      "source_uid": "apostles:source:roster",
+      "authority": "SOURCE_DOCUMENT",
+      "upstream_id": "mtg1-32c0300ea643893b",
+      "dashboard_snapshot": {
+        "repository": "https://github.com/gj3447/METAHUMOTONIC_DASHBOARD",
+        "path": "data/apostles/20261003-source-roster.json",
+        "sha256": "0ee224bd351804c567166f0083d4cbf58ed43fa2d69bc76e81b84aca8c64f597",
+        "digest_scope": "SNAPSHOT_BYTES"
+      },
+      "original_source": {
+        "owner": "SYMPOSIUM",
+        "repository": "https://github.com/gj3447/symposium",
+        "path": "METAHUMOTONIC/ontology/metahumotonic-public-graph.v1.json",
+        "revision": "ceaf2ccf1db10f621570badf9a88a394ca5c45a6",
+        "verification": "COMMIT_BYTES_MATCH",
+        "digest_scope": "PIN_METADATA_ONLY"
+      }
+    },
+    {
+      "source_uid": "apostles:source:persona-import",
+      "authority": "SOURCE_DOCUMENT",
+      "dashboard_snapshot": {
+        "repository": "https://github.com/gj3447/the-great-flow",
+        "path": "data/apostles/20261007-relation-source.md",
+                    "sha256": "1b84f45c4c79c264de8b2488b206a2f0cb294892d99fab9c30012b70d96d36fe",
+        "digest_scope": "PIN_METADATA_ONLY"
+      },
+      "original_source": {
+        "owner": "SYMPOSIUM",
+        "repository": "https://github.com/gj3447/symposium",
+        "path": "METAHUMOTONIC/SPACEGIRL/SOURCES.md",
+        "revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+        "verification": "COMMIT_BYTES_MATCH",
+        "digest_scope": "IMPORT_BYTES"
+      }
+    }
+  ],
+  "owner": {
+    "repository": "https://github.com/gj3447/the-great-flow",
+    "workflow": "docs/RESEARCH_WORKFLOW.md"
+  },
+  "runtime_role": {
+    "state": "UNASSIGNED",
+    "label": null,
+    "authority": "UNASSIGNED"
+  },
+  "content_manifest": "APOSTLE_CONTENT.json"
+}
