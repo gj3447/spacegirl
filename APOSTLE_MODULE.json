@@ -40,24 +40,6 @@
         "verification": "COMMIT_BYTES_MATCH",
         "digest_scope": "PIN_METADATA_ONLY"
       }
-    },
-    {
-      "source_uid": "apostles:source:persona-import",
-      "authority": "SOURCE_DOCUMENT",
-      "dashboard_snapshot": {
-        "repository": "https://github.com/gj3447/the-great-flow",
-        "path": "data/apostles/20261007-relation-source.md",
-                    "sha256": "1b84f45c4c79c264de8b2488b206a2f0cb294892d99fab9c30012b70d96d36fe",
-        "digest_scope": "PIN_METADATA_ONLY"
-      },
-      "original_source": {
-        "owner": "SYMPOSIUM",
-        "repository": "https://github.com/gj3447/symposium",
-        "path": "METAHUMOTONIC/SPACEGIRL/SOURCES.md",
-        "revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
-        "verification": "COMMIT_BYTES_MATCH",
-        "digest_scope": "IMPORT_BYTES"
-      }
     }
   ],
   "owner": {

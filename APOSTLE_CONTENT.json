@@ -421,7 +421,8 @@
       "sha256": "e04d6248a3610f786a6150ed1bf6c0a9061d16a3d07945c495bb608af2103509",
       "bytes": 7917,
       "authority": "SOURCE_DOCUMENT",
-      "content_authority": "USER_PRIMARY"
+      "content_authority": "USER_PRIMARY",
+      "provenance_kind": "ROLE_SNAPSHOT_NOT_ASSIGNMENT"
     }
   ],
   "guides": [
