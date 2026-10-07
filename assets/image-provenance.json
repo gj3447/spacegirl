@@ -12,9 +12,11 @@
   "generation": {
     "method": "chatgpt-api owner-managed ChatGPT GUI native image tool",
     "execution": "Temporary isolated image-capable relay; production service unchanged",
-    "prompt_sha256": "9342eec3ba89f59721c4bcbd4952416342edf236c842afc9bc4a38465593f451",
+    "prompt_sha256": "fc824d19be8872403d700096427315b2bda0506d126e8726c890984ae5ec21ec",
     "prompt_path": "docs/IMAGE_PROVENANCE.md",
-    "model_backend": "NOT_INDEPENDENTLY_VERIFIED"
+    "model_backend": "NOT_INDEPENDENTLY_VERIFIED",
+    "prompt_file_bytes": 1264,
+    "prompt_display": "The Markdown fence displays the prompt text; its delimiter newline is not part of the original prompt file."
   },
   "depicts": [
     "sym:Character:space_girl",
