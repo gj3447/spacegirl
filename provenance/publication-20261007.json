@@ -1,0 +1,47 @@
+{
+  "schema": "persona-publication/1",
+  "authority": "OBSERVED",
+  "user_source": {
+    "repository": "https://github.com/gj3447/the-great-flow",
+    "revision": "350220f97ac1104140a08af2d0d70fc6a004c4db",
+    "path": "data/apostles/20261007-persona-publication-user.txt",
+    "repository_path": "USER_PUBLICATION.txt",
+    "sha256": "60e80db3c70043865f8421e9a3f820714de673882ceb27feafe342b41f35b8e2",
+    "content_authority": "USER_PRIMARY"
+  },
+  "license": {
+    "identifier": "LicenseRef-MetaHumotonic-1.1",
+    "source_repository": "https://github.com/gj3447/metahumotonic-foundation",
+    "source_base_revision": "31e455313a13da8047f2d627c15296bac83efb5f",
+    "source_state": "WORKTREE_BYTES_OBSERVED",
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "11b5017d509407b38c2c6b816d3a4600bddcce54189a29b17cb8e234b30a7df1",
+        "bytes": 15102
+      },
+      {
+        "path": "licenses/MIT-legacy.txt",
+        "sha256": "c188e8bda36b2a2295f367d000f0151c89bb5be5b5e9205e3c8a4b70600fe4f4",
+        "bytes": 1117
+      },
+      {
+        "path": "licenses/MetaHumotonic-1.0.txt",
+        "sha256": "746164ee614c0f6683728acc4e9edab388ba15b4ef9e1db399e2c6d1f202c880",
+        "bytes": 12339
+      }
+    ],
+    "notice": "LICENSE-NOTICE.md",
+    "legacy_symposium": {
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "source_path": "LICENSE",
+      "path": "licenses/SYMPOSIUM-MIT.txt",
+      "sha256": "86b56515043a9209622fab6a1cd0273cf73cf95585d89dcd1e551348f3c87c1e"
+    }
+  },
+  "publication": {
+    "requested_visibility": "PUBLIC",
+    "authorization": "USER_PRIMARY",
+    "scope": "CONTENT_AND_LICENSE_PROVENANCE; live visibility is observed separately in the hub publication record."
+  }
+}

@@ -1,0 +1,915 @@
+{
+  "schema": "spacegirl/research-atlas/2",
+  "scope": "SOURCE_NAVIGATION_ONLY",
+  "source_set": {
+    "repository": "https://github.com/gj3447/symposium",
+    "revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+    "root": "METAHUMOTONIC/SPACEGIRL",
+    "document_count": 37,
+    "verification": "LOCAL_BYTES_PINNED",
+    "content_authority": "UNSPECIFIED"
+  },
+  "vocabulary": {
+    "node_kinds": [
+      "Persona",
+      "Topic",
+      "Direction",
+      "Claim",
+      "SourceArtifact",
+      "Gap",
+      "KgObservation",
+      "Region"
+    ],
+    "predicates": [
+      {
+        "uid": "spacegirl:predicate:ABOUT",
+        "domain": [
+          "Claim"
+        ],
+        "range": [
+          "Persona",
+          "Topic",
+          "Direction"
+        ],
+        "direction": "forward",
+        "cardinality": "1..N"
+      },
+      {
+        "uid": "spacegirl:predicate:SUPPORTED_BY",
+        "domain": [
+          "Claim",
+          "Gap"
+        ],
+        "range": [
+          "SourceArtifact"
+        ],
+        "direction": "forward",
+        "cardinality": "1..N"
+      },
+      {
+        "uid": "spacegirl:predicate:NAVIGATES_TO",
+        "domain": [
+          "SourceArtifact"
+        ],
+        "range": [
+          "Topic",
+          "Direction"
+        ],
+        "direction": "forward",
+        "cardinality": "0..N"
+      },
+      {
+        "uid": "spacegirl:predicate:HAS_STATUS",
+        "domain": [
+          "Claim"
+        ],
+        "range": [
+          "Gap"
+        ],
+        "direction": "forward",
+        "cardinality": "0..N"
+      },
+      {
+        "uid": "spacegirl:predicate:HAS_ORIGIN",
+        "domain": [
+          "Direction"
+        ],
+        "range": [
+          "Region"
+        ],
+        "direction": "forward",
+        "cardinality": "exactly_one_per_direction",
+        "meaning": "원전이 서술한 방향의 출발 영역"
+      },
+      {
+        "uid": "spacegirl:predicate:HAS_DESTINATION",
+        "domain": [
+          "Direction"
+        ],
+        "range": [
+          "Region"
+        ],
+        "direction": "forward",
+        "cardinality": "exactly_one_per_direction",
+        "meaning": "원전이 서술한 방향의 도착 영역"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "uid": "spacegirl:source:411793412a20711ee0d32ac27137e78eb65924f791111c7b37039d99dcca168c",
+      "kind": "SourceArtifact",
+      "label": "12_APOSTLE_RELATIONAL_GRAMMAR_PROPOSAL.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/12_APOSTLE_RELATIONAL_GRAMMAR_PROPOSAL.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/12_APOSTLE_RELATIONAL_GRAMMAR_PROPOSAL.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "411793412a20711ee0d32ac27137e78eb65924f791111c7b37039d99dcca168c",
+      "bytes": 22363,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "document_state": "DRAFT_SECONDARY_AI"
+    },
+    {
+      "uid": "spacegirl:source:539269a3d080a9e51756653ea08e941d9d981d5c541f9efd63cff6009f672867",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "539269a3d080a9e51756653ea08e941d9d981d5c541f9efd63cff6009f672867",
+      "bytes": 2118,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:026f6d4b90b1e2049cedebd44738a5f45339a95154687dde60b78ddcd3547e3d",
+      "kind": "SourceArtifact",
+      "label": "PROM_16_NSFW_WALL_CROSSING_2026-06-08.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/PROM_16_NSFW_WALL_CROSSING_2026-06-08.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/PROM_16_NSFW_WALL_CROSSING_2026-06-08.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "026f6d4b90b1e2049cedebd44738a5f45339a95154687dde60b78ddcd3547e3d",
+      "bytes": 13211,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:d1f0dc636baacf55fc07496d2d64d3fc1a3a49fe227cfdff0e5e04365a7e91ab",
+      "kind": "SourceArtifact",
+      "label": "메커니즘_진화.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/메커니즘_진화.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/메커니즘_진화.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "d1f0dc636baacf55fc07496d2d64d3fc1a3a49fe227cfdff0e5e04365a7e91ab",
+      "bytes": 7287,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:dea6e3bef38dc805e7023c005621642d017b3f1e3047546a5bf661c4fb89b377",
+      "kind": "SourceArtifact",
+      "label": "역사적_사례.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/역사적_사례.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/역사적_사례.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "dea6e3bef38dc805e7023c005621642d017b3f1e3047546a5bf661c4fb89b377",
+      "bytes": 18351,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:5f8f55146aeb699d08ea93a9c33a246db5b1ce2e192fd38880395b535979c24d",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "5f8f55146aeb699d08ea93a9c33a246db5b1ce2e192fd38880395b535979c24d",
+      "bytes": 3639,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:99f40754ef32691bcf08b79df07b0d63cb3e35056ecdfe9b77a11c507b47521d",
+      "kind": "SourceArtifact",
+      "label": "현재_층위.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/GREAT_WALL/현재_층위.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/GREAT_WALL/현재_층위.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "99f40754ef32691bcf08b79df07b0d63cb3e35056ecdfe9b77a11c507b47521d",
+      "bytes": 7909,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:6d71eba506c7d03e4cbd26fd016e32d25218a54e6da120c01f097f00f2a8897d",
+      "kind": "SourceArtifact",
+      "label": "HISTORICAL_TIMELINE.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/HISTORICAL_TIMELINE.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/HISTORICAL_TIMELINE.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "6d71eba506c7d03e4cbd26fd016e32d25218a54e6da120c01f097f00f2a8897d",
+      "bytes": 19051,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:9775e54d6ca85a31138bee0248ca989fa5b39ed0b710db729d6c649cb2e04829",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "9775e54d6ca85a31138bee0248ca989fa5b39ed0b710db729d6c649cb2e04829",
+      "bytes": 5748,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:5d21a5b2ab9380e1f0eab53b3a39de1620902efdf522bbebbe0d8117e9517f5a",
+      "kind": "SourceArtifact",
+      "label": "PROM_64_REPORT.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/PROM_64_REPORT.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/PROM_64_REPORT.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "5d21a5b2ab9380e1f0eab53b3a39de1620902efdf522bbebbe0d8117e9517f5a",
+      "bytes": 13923,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:768c76691c87eddbef779d99c9952d7d224f187da4efdbcd1963d26459279f14",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SEX_VOID/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SEX_VOID/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "768c76691c87eddbef779d99c9952d7d224f187da4efdbcd1963d26459279f14",
+      "bytes": 2425,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:93d94995bc0dff49fbdcab0c3f0ab7b51ab67b84e506bd1f960294580f9e0721",
+      "kind": "SourceArtifact",
+      "label": "거주자.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SEX_VOID/거주자.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SEX_VOID/거주자.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "93d94995bc0dff49fbdcab0c3f0ab7b51ab67b84e506bd1f960294580f9e0721",
+      "bytes": 7625,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:1b83046c113f1e0eaa93286dba1e000562d7876f109f2ed66bc84f57760e7b34",
+      "kind": "SourceArtifact",
+      "label": "발굴학.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SEX_VOID/발굴학.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SEX_VOID/발굴학.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "1b83046c113f1e0eaa93286dba1e000562d7876f109f2ed66bc84f57760e7b34",
+      "bytes": 8089,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:48fc6d0f0d9f44d378f7921c63b4fdfd85fab7f2595317c2350778bb1d53b846",
+      "kind": "SourceArtifact",
+      "label": "인프라.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SEX_VOID/인프라.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SEX_VOID/인프라.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "48fc6d0f0d9f44d378f7921c63b4fdfd85fab7f2595317c2350778bb1d53b846",
+      "bytes": 7490,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:0a6a6cda39ddc8f38871874f3cc364a9628f99201bc0558e5141a98119de6916",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SEX_VOID/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SEX_VOID/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "0a6a6cda39ddc8f38871874f3cc364a9628f99201bc0558e5141a98119de6916",
+      "bytes": 5703,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:6d9dbbc885246ec254233af57f52f678d61bb4ffa24b688fd2ef865864cac59a",
+      "kind": "SourceArtifact",
+      "label": "SOURCES.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SOURCES.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SOURCES.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "6d9dbbc885246ec254233af57f52f678d61bb4ffa24b688fd2ef865864cac59a",
+      "bytes": 8469,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df",
+      "kind": "SourceArtifact",
+      "label": "SPACEGIRL_V2_CRYSTALLIZATION.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SPACEGIRL_V2_CRYSTALLIZATION.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SPACEGIRL_V2_CRYSTALLIZATION.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df",
+      "bytes": 19799,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "document_state": "DRAFT_SECONDARY_AI"
+    },
+    {
+      "uid": "spacegirl:source:f6c7cd4a47eed4b6956a4544b25418864a20a3adcb64065bf48534e8b7c5db4c",
+      "kind": "SourceArtifact",
+      "label": "Glaze_Nightshade_분석.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SSB/Glaze_Nightshade_분석.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SSB/Glaze_Nightshade_분석.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "f6c7cd4a47eed4b6956a4544b25418864a20a3adcb64065bf48534e8b7c5db4c",
+      "bytes": 9633,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:c4feff3d395a7639ff3d2ff5eb8317869adf13c9a8c2cb8083a2ba18046be31a",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SSB/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SSB/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "c4feff3d395a7639ff3d2ff5eb8317869adf13c9a8c2cb8083a2ba18046be31a",
+      "bytes": 5590,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:b4fff5ae6d6102c419964d369c4034bcc8a4c836f610f176b07d562319a2be16",
+      "kind": "SourceArtifact",
+      "label": "역사적_선조.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SSB/역사적_선조.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SSB/역사적_선조.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "b4fff5ae6d6102c419964d369c4034bcc8a4c836f610f176b07d562319a2be16",
+      "bytes": 7977,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:17b85b58eef0094152a8a53854e827bed5175346f0903dfd04a849593705fd07",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SSB/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SSB/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "17b85b58eef0094152a8a53854e827bed5175346f0903dfd04a849593705fd07",
+      "bytes": 7360,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:145cb793c7dc14b216f943727c5a7b97fae3079109fa7501496767a9f533af96",
+      "kind": "SourceArtifact",
+      "label": "코드_예시.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/SSB/코드_예시.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/SSB/코드_예시.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "145cb793c7dc14b216f943727c5a7b97fae3079109fa7501496767a9f533af96",
+      "bytes": 7310,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:fc60b9cc427a8ace6dd56b4aded9626375381b16688ddfda41f0a81cfc1da0f1",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "fc60b9cc427a8ace6dd56b4aded9626375381b16688ddfda41f0a81cfc1da0f1",
+      "bytes": 5077,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:d386c5c6ae8ea9bb5f208c68ab04c4685e25f919e18c08ae88012fbe778f71aa",
+      "kind": "SourceArtifact",
+      "label": "매개체.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/매개체.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/매개체.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "d386c5c6ae8ea9bb5f208c68ab04c4685e25f919e18c08ae88012fbe778f71aa",
+      "bytes": 10344,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:728519bd0f05435a010c982cf2639dd62076a566a58739ffcf6d6e85f4a34ea3",
+      "kind": "SourceArtifact",
+      "label": "신학적_원형.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/신학적_원형.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/신학적_원형.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "728519bd0f05435a010c982cf2639dd62076a566a58739ffcf6d6e85f4a34ea3",
+      "bytes": 9485,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:18c00c8703047b14b82b063165cab2529a9e3fbb3b9507fcf4ad01d1b9e4c2c0",
+      "kind": "SourceArtifact",
+      "label": "역사적_혁명.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/역사적_혁명.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/역사적_혁명.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "18c00c8703047b14b82b063165cab2529a9e3fbb3b9507fcf4ad01d1b9e4c2c0",
+      "bytes": 11161,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:609f043c7292fe7438da3a47eaaba12959ae3e5ca03fd63060c0dc9d3f096fce",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/WE_FLYING_UP/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "609f043c7292fe7438da3a47eaaba12959ae3e5ca03fd63060c0dc9d3f096fce",
+      "bytes": 7484,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:7e7962e077e507061912e008ad1919fd9a1ab3b082ae10bb529f1a2c48f98d50",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/생명인간/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/생명인간/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "7e7962e077e507061912e008ad1919fd9a1ab3b082ae10bb529f1a2c48f98d50",
+      "bytes": 2725,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:aa294b9ece24b87fa97e96bfca706f47d7e3e30b1917fcecba7837e97081d43b",
+      "kind": "SourceArtifact",
+      "label": "디오니소스적_저항.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/생명인간/디오니소스적_저항.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/생명인간/디오니소스적_저항.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "aa294b9ece24b87fa97e96bfca706f47d7e3e30b1917fcecba7837e97081d43b",
+      "bytes": 8982,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:35af615c5d364a56add1006d7c2349ec8501ab167f3723b8c37918f3dd1ddd47",
+      "kind": "SourceArtifact",
+      "label": "모성_원형.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/생명인간/모성_원형.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/생명인간/모성_원형.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "35af615c5d364a56add1006d7c2349ec8501ab167f3723b8c37918f3dd1ddd47",
+      "bytes": 8253,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:95102223fdd6d82025688ff2249cd1155281b9622a88652ec23abeb10226c6cb",
+      "kind": "SourceArtifact",
+      "label": "역사적_탄압.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/생명인간/역사적_탄압.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/생명인간/역사적_탄압.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "95102223fdd6d82025688ff2249cd1155281b9622a88652ec23abeb10226c6cb",
+      "bytes": 10368,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:49cdb0212c9029a83ed97be9757ad41091068349e78d88439d491f56e569da66",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/생명인간/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/생명인간/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "49cdb0212c9029a83ed97be9757ad41091068349e78d88439d491f56e569da66",
+      "bytes": 5504,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:8d15db76766121a070680102075851e89b50d814985d1f56f96cc98d138fd28e",
+      "kind": "SourceArtifact",
+      "label": "INDEX.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/순수이성인간/INDEX.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/순수이성인간/INDEX.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "8d15db76766121a070680102075851e89b50d814985d1f56f96cc98d138fd28e",
+      "bytes": 4452,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:eb129bd7528a3e1feb29750af45cb14c3e780d642086985eb524c14f3c54700f",
+      "kind": "SourceArtifact",
+      "label": "TESCREAL_현재.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/순수이성인간/TESCREAL_현재.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/순수이성인간/TESCREAL_현재.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "eb129bd7528a3e1feb29750af45cb14c3e780d642086985eb524c14f3c54700f",
+      "bytes": 9540,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:94267097e60e8dd4fbfe343148ed64f0782a7cf5483ff1fba5a1d91cda55b662",
+      "kind": "SourceArtifact",
+      "label": "메커니즘.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/순수이성인간/메커니즘.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/순수이성인간/메커니즘.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "94267097e60e8dd4fbfe343148ed64f0782a7cf5483ff1fba5a1d91cda55b662",
+      "bytes": 7980,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:e63a6718390073c879cabcff637e988e299375c7ad4bd0323b3057aadee1082b",
+      "kind": "SourceArtifact",
+      "label": "사상사_계보.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/순수이성인간/사상사_계보.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/순수이성인간/사상사_계보.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "e63a6718390073c879cabcff637e988e299375c7ad4bd0323b3057aadee1082b",
+      "bytes": 9597,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:source:64710beb14cb4491dbe472f99f75c70681ef759b5b09334d42149fc246929b86",
+      "kind": "SourceArtifact",
+      "label": "정전.md",
+      "repository_path": "sources/SYMPOSIUM/METAHUMOTONIC/SPACEGIRL/순수이성인간/정전.md",
+      "source_path": "METAHUMOTONIC/SPACEGIRL/순수이성인간/정전.md",
+      "source_repository": "https://github.com/gj3447/symposium",
+      "source_revision": "1f2727a0c0d8d9703193bee6406db21d2fd549dd",
+      "sha256": "64710beb14cb4491dbe472f99f75c70681ef759b5b09334d42149fc246929b86",
+      "bytes": 6974,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:entity:persona",
+      "kind": "Persona",
+      "label": "Space Girl",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "source_reference": "APOSTLE_MODULE.json",
+      "stable_entity_uid": "sym:Character:space_girl"
+    },
+    {
+      "uid": "spacegirl:topic:network-sexvoid-boundary",
+      "kind": "Topic",
+      "label": "network / sexvoid / Great Wall",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY"
+    },
+    {
+      "uid": "spacegirl:topic:life-human",
+      "kind": "Topic",
+      "label": "생명인간",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY"
+    },
+    {
+      "uid": "spacegirl:topic:pure-reason-human",
+      "kind": "Topic",
+      "label": "순수이성인간",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY"
+    },
+    {
+      "uid": "spacegirl:direction:ssb",
+      "kind": "Direction",
+      "label": "SSB",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:direction:we-flying-up",
+      "kind": "Direction",
+      "label": "WE_FLYING_UP",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED"
+    },
+    {
+      "uid": "spacegirl:claim:ssb-source-label",
+      "kind": "Claim",
+      "label": "SSB의 원전 방향: network → sexvoid",
+      "authority": "SECONDARY_AI",
+      "content_authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:17b85b58eef0094152a8a53854e827bed5175346f0903dfd04a849593705fd07",
+          "anchor": "#L7",
+          "quote": "**SSB** = network -> sexvoid 로 데이터를 옮기는것"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:claim:we-flying-up-source-label",
+      "kind": "Claim",
+      "label": "WE_FLYING_UP의 원전 방향: sexvoid → network",
+      "authority": "SECONDARY_AI",
+      "content_authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:609f043c7292fe7438da3a47eaaba12959ae3e5ca03fd63060c0dc9d3f096fce",
+          "anchor": "#L7",
+          "quote": "**we flying up** = sexvoid -> network 생명인간을 구원하기 위한, 계시, 혁명, 사회활동"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:claim:v2-draft-not-ratified",
+      "kind": "Claim",
+      "label": "V2 crystallization records its proposal as draft material",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "status": "NOT_RATIFIED",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df",
+          "anchor": "#L3",
+          "quote": "DRAFT_SECONDARY_AI"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:claim:grammar-draft-not-ratified",
+      "kind": "Claim",
+      "label": "Relational grammar records its proposal as draft material",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "status": "NOT_RATIFIED",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:411793412a20711ee0d32ac27137e78eb65924f791111c7b37039d99dcca168c",
+          "anchor": "#L5",
+          "quote": "NOT_RATIFIED"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:claim:open-boundary-status",
+      "kind": "Claim",
+      "label": "Boundary status remains an open source-recorded question",
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "UNSPECIFIED",
+      "status": "OPEN",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df",
+          "anchor": "#L29",
+          "quote": "OPEN"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:claim:atlas-reading-order",
+      "kind": "Claim",
+      "label": "Atlas groups source folders only to aid reading",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:9775e54d6ca85a31138bee0248ca989fa5b39ed0b710db729d6c649cb2e04829",
+          "anchor": "#L4",
+          "quote": "항목별 폴더 구조"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:gap:primary-mind-texts",
+      "kind": "Gap",
+      "label": "Original MIND texts are not locally byte-pinned",
+      "authority": "SECONDARY_AI",
+      "status": "NOT_IMPORTED",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:6d9dbbc885246ec254233af57f52f678d61bb4ffa24b688fd2ef865864cac59a",
+          "anchor": "#원문-출처",
+          "quote": "원문"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:gap:external-history-verification",
+      "kind": "Gap",
+      "label": "External historical references were not independently checked",
+      "authority": "SECONDARY_AI",
+      "status": "NOT_RECHECKED",
+      "source_anchors": [
+        {
+          "source": "spacegirl:source:6d71eba506c7d03e4cbd26fd016e32d25218a54e6da120c01f097f00f2a8897d",
+          "anchor": "#역사적-타임라인",
+          "quote": "역사"
+        }
+      ]
+    },
+    {
+      "uid": "spacegirl:kg-observation:character-space-girl",
+      "kind": "KgObservation",
+      "label": "read-only KG entity observation",
+      "authority": "SECONDARY_AI",
+      "status": "OBSERVED_UNVERIFIED",
+      "external_uid": "sym:Character:space_girl",
+      "returned_authority": "UNSPECIFIED",
+      "returned_lifecycle": "UNKNOWN"
+    },
+    {
+      "uid": "spacegirl:region:network",
+      "kind": "Region",
+      "label": "network",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "meaning": "창작·철학 원전의 영역 어휘; 실제 네트워크 접근 경계가 아님"
+    },
+    {
+      "uid": "spacegirl:region:sexvoid",
+      "kind": "Region",
+      "label": "sexvoid",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "meaning": "창작·철학 원전의 영역 어휘; 실제 네트워크 접근 경계가 아님"
+    }
+  ],
+  "edges": [
+    {
+      "uid": "spacegirl:edge:ssb-claim-direction",
+      "predicate": "spacegirl:predicate:ABOUT",
+      "from": "spacegirl:claim:ssb-source-label",
+      "to": "spacegirl:direction:ssb"
+    },
+    {
+      "uid": "spacegirl:edge:ssb-claim-index",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:ssb-source-label",
+      "to": "spacegirl:source:17b85b58eef0094152a8a53854e827bed5175346f0903dfd04a849593705fd07"
+    },
+    {
+      "uid": "spacegirl:edge:we-claim-direction",
+      "predicate": "spacegirl:predicate:ABOUT",
+      "from": "spacegirl:claim:we-flying-up-source-label",
+      "to": "spacegirl:direction:we-flying-up"
+    },
+    {
+      "uid": "spacegirl:edge:we-claim-index",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:we-flying-up-source-label",
+      "to": "spacegirl:source:609f043c7292fe7438da3a47eaaba12959ae3e5ca03fd63060c0dc9d3f096fce"
+    },
+    {
+      "uid": "spacegirl:edge:v2-draft",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:v2-draft-not-ratified",
+      "to": "spacegirl:source:8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df"
+    },
+    {
+      "uid": "spacegirl:edge:grammar-draft",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:grammar-draft-not-ratified",
+      "to": "spacegirl:source:411793412a20711ee0d32ac27137e78eb65924f791111c7b37039d99dcca168c"
+    },
+    {
+      "uid": "spacegirl:edge:boundary-open",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:open-boundary-status",
+      "to": "spacegirl:source:8f179d3abc9e775f6904113b8d0dee426fbcc0ecae7a8271a55704c224fa61df"
+    },
+    {
+      "uid": "spacegirl:edge:atlas-reading",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:claim:atlas-reading-order",
+      "to": "spacegirl:source:9775e54d6ca85a31138bee0248ca989fa5b39ed0b710db729d6c649cb2e04829"
+    },
+    {
+      "uid": "spacegirl:edge:primary-gap",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:gap:primary-mind-texts",
+      "to": "spacegirl:source:6d9dbbc885246ec254233af57f52f678d61bb4ffa24b688fd2ef865864cac59a"
+    },
+    {
+      "uid": "spacegirl:edge:history-gap",
+      "predicate": "spacegirl:predicate:SUPPORTED_BY",
+      "from": "spacegirl:gap:external-history-verification",
+      "to": "spacegirl:source:6d71eba506c7d03e4cbd26fd016e32d25218a54e6da120c01f097f00f2a8897d"
+    },
+    {
+      "uid": "spacegirl:edge:index-boundary",
+      "predicate": "spacegirl:predicate:NAVIGATES_TO",
+      "from": "spacegirl:source:9775e54d6ca85a31138bee0248ca989fa5b39ed0b710db729d6c649cb2e04829",
+      "to": "spacegirl:topic:network-sexvoid-boundary"
+    },
+    {
+      "uid": "spacegirl:edge:life-index",
+      "predicate": "spacegirl:predicate:NAVIGATES_TO",
+      "from": "spacegirl:source:7e7962e077e507061912e008ad1919fd9a1ab3b082ae10bb529f1a2c48f98d50",
+      "to": "spacegirl:topic:life-human"
+    },
+    {
+      "uid": "spacegirl:edge:reason-index",
+      "predicate": "spacegirl:predicate:NAVIGATES_TO",
+      "from": "spacegirl:source:8d15db76766121a070680102075851e89b50d814985d1f56f96cc98d138fd28e",
+      "to": "spacegirl:topic:pure-reason-human"
+    },
+    {
+      "uid": "spacegirl:edge:ssb-index",
+      "predicate": "spacegirl:predicate:NAVIGATES_TO",
+      "from": "spacegirl:source:c4feff3d395a7639ff3d2ff5eb8317869adf13c9a8c2cb8083a2ba18046be31a",
+      "to": "spacegirl:direction:ssb"
+    },
+    {
+      "uid": "spacegirl:edge:we-index",
+      "predicate": "spacegirl:predicate:NAVIGATES_TO",
+      "from": "spacegirl:source:fc60b9cc427a8ace6dd56b4aded9626375381b16688ddfda41f0a81cfc1da0f1",
+      "to": "spacegirl:direction:we-flying-up"
+    },
+    {
+      "uid": "spacegirl:edge:ssb-has_origin",
+      "predicate": "spacegirl:predicate:HAS_ORIGIN",
+      "from": "spacegirl:direction:ssb",
+      "to": "spacegirl:region:network",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "claim": "spacegirl:claim:ssb-source-label"
+    },
+    {
+      "uid": "spacegirl:edge:ssb-has_destination",
+      "predicate": "spacegirl:predicate:HAS_DESTINATION",
+      "from": "spacegirl:direction:ssb",
+      "to": "spacegirl:region:sexvoid",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "claim": "spacegirl:claim:ssb-source-label"
+    },
+    {
+      "uid": "spacegirl:edge:we-flying-up-has_origin",
+      "predicate": "spacegirl:predicate:HAS_ORIGIN",
+      "from": "spacegirl:direction:we-flying-up",
+      "to": "spacegirl:region:sexvoid",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "claim": "spacegirl:claim:we-flying-up-source-label"
+    },
+    {
+      "uid": "spacegirl:edge:we-flying-up-has_destination",
+      "predicate": "spacegirl:predicate:HAS_DESTINATION",
+      "from": "spacegirl:direction:we-flying-up",
+      "to": "spacegirl:region:network",
+      "authority": "SECONDARY_AI",
+      "status": "NAVIGATION_ONLY",
+      "claim": "spacegirl:claim:we-flying-up-source-label"
+    }
+  ],
+  "competency_queries": [
+    {
+      "uid": "spacegirl:cq:source-completeness",
+      "question": "Are all 37 imported SPACEGIRL documents path/revision/hash/byte pinned?",
+      "expected": "37 SourceArtifact nodes exactly matching APOSTLE_CONTENT.json"
+    },
+    {
+      "uid": "spacegirl:cq:direction-evidence",
+      "question": "Can SSB and WE_FLYING_UP be traced to separate source anchors?",
+      "expected": "two source-attested claims and supporting edges"
+    },
+    {
+      "uid": "spacegirl:cq:draft-boundary",
+      "question": "Are V2 and grammar proposal still non-ratified?",
+      "expected": "NOT_RATIFIED claims with source anchors"
+    }
+  ]
+}

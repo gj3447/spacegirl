@@ -423,6 +423,17 @@
       "authority": "SOURCE_DOCUMENT",
       "content_authority": "USER_PRIMARY",
       "provenance_kind": "ROLE_SNAPSHOT_NOT_ASSIGNMENT"
+    },
+    {
+      "uid": "apostle-document:71c3f9b8fe656f66514fead7199a7f97bcac55c86656524211b406c0fa08e10a",
+      "repository_path": "USER_PUBLICATION.txt",
+      "source_path": "data/apostles/20261007-persona-publication-user.txt",
+      "source_repository": "https://github.com/gj3447/the-great-flow",
+      "source_revision": "350220f97ac1104140a08af2d0d70fc6a004c4db",
+      "sha256": "60e80db3c70043865f8421e9a3f820714de673882ceb27feafe342b41f35b8e2",
+      "bytes": 392,
+      "authority": "SOURCE_DOCUMENT",
+      "content_authority": "USER_PRIMARY"
     }
   ],
   "guides": [
@@ -439,6 +450,21 @@
     {
       "repository_path": "docs/RESEARCH_MAP.md",
       "sha256": "b111b6336e0ad14d7d3ede307786d539786609537c56418c20cc49841ad24a4f",
+      "authority": "SECONDARY_AI"
+    },
+    {
+      "repository_path": "README.md",
+      "sha256": "0b03a61985fe698187946b97740bf3725b2d8c959d6eae398251cbcc536aa17e",
+      "authority": "SECONDARY_AI"
+    },
+    {
+      "repository_path": "docs/RESEARCH_ATLAS.md",
+      "sha256": "2fd260c0ccb1f7d984f8897e25304e760dc4962b77f5230fad9c495553d8027c",
+      "authority": "SECONDARY_AI"
+    },
+    {
+      "repository_path": "LICENSE-NOTICE.md",
+      "sha256": "5a3ad3def4b7b0b33dddc95ee9a3e15357332b702ff726c7fff0cc0992555aca",
       "authority": "SECONDARY_AI"
     }
   ],
