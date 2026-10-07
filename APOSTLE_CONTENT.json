@@ -454,7 +454,7 @@
     },
     {
       "repository_path": "README.md",
-      "sha256": "0b03a61985fe698187946b97740bf3725b2d8c959d6eae398251cbcc536aa17e",
+      "sha256": "7c7723b5d3ae75d2b61b972321493246f6605f7f0f6563583749aab74ee24166",
       "authority": "SECONDARY_AI"
     },
     {
@@ -465,6 +465,11 @@
     {
       "repository_path": "LICENSE-NOTICE.md",
       "sha256": "5a3ad3def4b7b0b33dddc95ee9a3e15357332b702ff726c7fff0cc0992555aca",
+      "authority": "SECONDARY_AI"
+    },
+    {
+      "repository_path": "docs/IMAGE_PROVENANCE.md",
+      "sha256": "4a198e8ba438b273556e0ea41fc7f77aeeb4960401911b2cfe643e461a6cd53f",
       "authority": "SECONDARY_AI"
     }
   ],

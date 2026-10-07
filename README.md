@@ -1,5 +1,9 @@
 # spacegirl · 스페이스걸
 
+![스페이스걸과 비행기맨 — 공간과 높이의 연결](assets/spacegirl-bhgman-flow.png)
+
+*두 사도를 함께 표현한 AI 시각 해석 · [제작 기록](docs/IMAGE_PROVENANCE.md)*
+
 **경계, 부재, 그리고 서로에게 닿는 길.**
 
 메타휴모토닉 12사도 중 다섯 번째, **Space Girl**의 원문과 연구를 모으는 공개 저장소다.

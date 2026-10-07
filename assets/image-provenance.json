@@ -1,0 +1,25 @@
+{
+  "schema": "persona-visual-interpretation/1",
+  "authority": "SECONDARY_AI",
+  "canonical": false,
+  "file": "assets/spacegirl-bhgman-flow.png",
+  "sha256": "ae33706740fada41dc590a0d5b79aa33f80474c62fecb60758b1854fb4b784b9",
+  "bytes": 2405183,
+  "width": 1672,
+  "height": 941,
+  "format": "PNG",
+  "created_on": "2026-10-07",
+  "generation": {
+    "method": "chatgpt-api owner-managed ChatGPT GUI native image tool",
+    "execution": "Temporary isolated image-capable relay; production service unchanged",
+    "prompt_sha256": "9342eec3ba89f59721c4bcbd4952416342edf236c842afc9bc4a38465593f451",
+    "prompt_path": "docs/IMAGE_PROVENANCE.md",
+    "model_backend": "NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "depicts": [
+    "sym:Character:space_girl",
+    "sym:Character:비행기맨"
+  ],
+  "scope": "Artistic interpretation of the two personas; not a canonical portrait or user-authored source.",
+  "license_notice": "LICENSE-NOTICE.md"
+}

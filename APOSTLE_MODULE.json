@@ -73,5 +73,14 @@
     ],
     "authority": "SECONDARY_AI",
     "scope": "OWNER_LOCAL_SOURCE_NAVIGATION"
-  }
+  },
+  "visual_assets": [
+    {
+      "path": "assets/spacegirl-bhgman-flow.png",
+      "sha256": "ae33706740fada41dc590a0d5b79aa33f80474c62fecb60758b1854fb4b784b9",
+      "authority": "SECONDARY_AI",
+      "canonical": false,
+      "provenance": "assets/image-provenance.json"
+    }
+  ]
 }
